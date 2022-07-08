@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Juego del Ahorcado</title>
+        <style>
+            body{
+                margin: 0;
+                background:url("img/fondo.jpg") no-repeat center;
+                background-size: cover;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif0;
+
+            }
+            header{
+                background-color: rgb(145, 38, 170);
+                padding: 10px;
+                text-align: center;
+                margin-bottom: 0px;
+            }
+            h1{
+                margin: 0;
+                color: white;
+            }
+            img{
+                border-radius: 10px;
+                border-style: double;
+                width: 250px;
+                margin: 20px;
+                text-align: center;
+                background-color: antiquewhite;
+                border-color: blueviolet;
+            }
+            main{
+                width: 80%;
+                margin: auto;
+                padding: 20px;
+                background: rgba(255, 255, 255,.7);
+                display: flex;
+                gap: 30px;
+            }
+            #adivinarfrase{
+                height: 3em;
+            }
+            #adivinarfrase span{
+                vertical-align: bottom;
+                font-size: 2em;
+                border-bottom: 2px solid black;
+                min-width: 20px;
+                text-align: center;
+                margin-right: 6px;
+                display: inline-block;
+            }
+            #adivinarfrase span.espacio{
+                border-color: transparent;
+            }
+            #alfabeto{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            #alfabeto button{
+                width: 28px;
+                padding: 6px 0;
+                text-align: center;
+            }
+            #jugar{
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenido al juego del Ahorcado</h1>
+        </header>
+        <main>
+            <img id = "imagen" src="img/imagen0.png" alt="Ahorcado"/>
+            <div>
+                <p id="adivinarfrase">
+                </p>
+                <button id="jugar">JUGAR</button>
+                <p id="resultado"></p>
+                <div id="alfabeto">
+                    <button>A</button>
+                    <button>B</button>
+                    <button>C</button>
+                    <button>D</button>
+                    <button>E</button>
+                    <button>F</button>
+                    <button>G</button>
+                    <button>H</button>
+                    <button>I</button>
+                    <button>J</button>
+                    <button>K</button>
+                    <button>L</button>
+                    <button>M</button>
+                    <button>N</button>
+                    <button>Ñ</button>
+                    <button>O</button>
+                    <button>P</button>
+                    <button>Q</button>
+                    <button>R</button>
+                    <button>S</button>
+                    <button>T</button>
+                    <button>U</button>
+                    <button>V</button>
+                    <button>W</button>
+                    <button>X</button>
+                    <button>Y</button>
+                    <button>Z</button>
+                </div>
+            </div>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
